@@ -493,5 +493,4 @@ void BTree::remove(int k)
         delete tmp;
     }
     return;
-}
-
+};

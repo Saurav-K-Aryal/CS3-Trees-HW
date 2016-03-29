@@ -52,6 +52,46 @@ int main()
     cout << "net time taken for delete:(in seconds) " << ascending_B_tree_diff / CLOCKS_PER_SEC << endl;
 
  
-    /* For Red Black Tree */    
+    // /* For Red Black Tree */    
+    // cout << "\n\nFor a Red Black Tree\n\n";
+    // cout << "Insert values from 1 to 1,000,000 serially in ascending order\n";   
+
+    // // start clock
+    // t1 = clock();
+
+    // RBtree RBt;
+    
+    // for (int i = 1; i <= 1000000; i++) {
+    //     RBt.insert(i);
+    // }
+    // t2 = clock();         // end clock
+
+    // ascending_B_tree_diff = ((float)t2-(float)t1);
+
+    // // converting the time to seconds before console printing
+    // // CLOCKS_PER_SEC is a macro from the time library
+    // cout << "net time taken for insert:(in seconds) " << ascending_B_tree_diff / CLOCKS_PER_SEC << endl;
+
+
+    // // deleting values in the same order:
+
+    // cout << "Delete values from 1 to 1,000,000 serially in ascending order\n";
+
+    // t1 = clock();
+
+    // for (int i = 1; i <= 1000000; i++) {
+    //     RBt.del(i);
+    // }
+    // t2 = clock();         // end clock
+
+    // ascending_B_tree_diff = ((float)t2-(float)t1);
+
+    // // converting the time to seconds before console printing
+    // // CLOCKS_PER_SEC is a macro from the time library
+    // cout << "net time taken for delete:(in seconds) " << ascending_B_tree_diff / CLOCKS_PER_SEC << endl;
+
+
+
+
     return 0;
 }
