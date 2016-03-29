@@ -8,15 +8,19 @@ using namespace std;
 
 int main()
 {
-    BTree Bt(3); // A B-Tree with minium degree 3
-
+    //initializing two clock variables to measure execution time.
     clock_t t1,t2;
+
+    
+    /* For 2-3 B Tree */    
 
     cout << "For a 2-3 B Tree\n\n";
     cout << "Insert values from 1 to 1,000,000 serially in ascending order\n";
 
     // start clock
     t1 = clock();
+
+    BTree Bt(3); 
     
     for (int i = 1; i <= 1000000; i++) {
         Bt.insert(i);
@@ -27,7 +31,7 @@ int main()
 
     // converting the time to seconds before console printing
     // CLOCKS_PER_SEC is a macro from the time library
-    cout << "net time taken:(in seconds) " << ascending_B_tree_diff / CLOCKS_PER_SEC;
+    cout << "net time taken for insert:(in seconds) " << ascending_B_tree_diff / CLOCKS_PER_SEC << endl;
 
 
     // deleting values in the same order:
@@ -45,8 +49,9 @@ int main()
 
     // converting the time to seconds before console printing
     // CLOCKS_PER_SEC is a macro from the time library
-    cout << "net time taken:(in seconds) " << ascending_B_tree_diff / CLOCKS_PER_SEC;
+    cout << "net time taken for delete:(in seconds) " << ascending_B_tree_diff / CLOCKS_PER_SEC << endl;
 
  
+    /* For Red Black Tree */    
     return 0;
 }
