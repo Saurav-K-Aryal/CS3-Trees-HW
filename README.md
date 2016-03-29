@@ -14,17 +14,16 @@ Implementing the following flavors of trees in C++ and realworld run-time analys
 
 Results (in seconds):
 
-- 1 million insertions:
+**1 million insertions:**
 
 * AVLTree ->
 * 2-3 B Tree ->
 * Red Black Tree ->
 * Binary Search Tree ->
 
-- 1 million deletions:
+**1 million deletions:**
 
 * AVLTree ->
 * 2-3 B Tree ->
 * Red Black Tree ->
-* Binary Search Tree ->
-
+* Binary Search Tree -> 
