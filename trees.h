@@ -112,7 +112,7 @@ public:
 
 class BinarySearchTree
 {
-    private:
+    public:
         struct tree_node
         {
            tree_node* left;
@@ -120,7 +120,6 @@ class BinarySearchTree
            int data;
         };
         tree_node* root;
-    public:
         BinarySearchTree()
         {
            root = NULL;
