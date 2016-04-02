@@ -74,7 +74,7 @@ int main()
     cout << "net time taken for delete:(in seconds) " << time_diff / CLOCKS_PER_SEC << endl;
 
    cout << "**********************************************************************\n";
-    /* For BinarySearch Tree */    
+       /* For BinarySearch Tree */    
 
     cout << "For a BinarySearch Tree\n\n";
     cout << "Inserting unique values from 1 to 1,000,000 randomly\n";
@@ -104,6 +104,49 @@ int main()
 
     for (int i = 1; i <= 1000000; i++ ){
     	bst.remove(i);
+    }
+
+    t2 = clock();         // end clock
+
+    time_diff = ((float)t2-(float)t1);
+
+    // converting the time to seconds before console printing
+    // CLOCKS_PER_SEC is a macro from the time library
+    cout << "Net time taken for delete:(in seconds) " << time_diff / CLOCKS_PER_SEC << endl;
+
+
+    cout << "\n**********************************************************************\n";
+
+     /* For an AVL Tree */    
+
+    cout << "For a AVL Tree\n\n";
+    cout << "Inserting unique values from 1 to 1,000,000 randomly\n";
+
+    // start clock
+    t1 = clock();
+
+	AVLTree avlt;
+
+   for (vector<int>::iterator it=myvector.begin(); it!=myvector.end(); ++it) {
+    avlt.InsertNode(*it);
+}
+    t2 = clock();         // end clock
+
+    time_diff = ((float)t2-(float)t1);
+
+    // converting the time to seconds before console printing
+    // CLOCKS_PER_SEC is a macro from the time library
+    cout << "Net time taken for insert:(in seconds) " << time_diff / CLOCKS_PER_SEC << endl;
+
+
+    // deleting values in the same order:
+
+    cout << "\nDeleting values from 1 to 1,000,000 serially in ascending order\n";
+
+    t1 = clock();
+
+    for (int i = 1; i <= 1000000; i++ ){
+    	avlt.RemoveNode(i);
     }
 
     t2 = clock();         // end clock

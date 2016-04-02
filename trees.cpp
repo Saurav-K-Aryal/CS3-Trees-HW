@@ -495,6 +495,7 @@ void BTree::remove(int k)
     return;
 };
 
+
 /* BST implementation */
 
 void BinarySearchTree::insert(int d)
