@@ -119,16 +119,16 @@ int main()
 
      /* For an AVL Tree */    
 
-    cout << "For an AVL Tree\n\n";
+    cout << "For a Red Black Tree\n\n";
     cout << "Inserting unique values from 1 to 1,000,000 randomly\n";
 
     // start clock
     t1 = clock();
 
-	RBT rbt;
-
+	RedBlackTree<int> rbt;
+   
    for (vector<int>::iterator it=myvector.begin(); it!=myvector.end(); ++it) {
-    rbt.add(*it);
+    rbt.insert_key(*it);
 }
     t2 = clock();         // end clock
  
@@ -146,7 +146,7 @@ int main()
     t1 = clock();
 
     for (int i = 1; i <= 1000000; i++ ){
-    	rbt.deleting(i);
+    	rbt.delete_key(i);
     }
 
     t2 = clock();         // end clock
