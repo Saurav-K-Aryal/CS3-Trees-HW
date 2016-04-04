@@ -2,7 +2,7 @@
 
 Contributors:
 - Anurrag Rijal
-- Ashish Adhikari
+- Utsab Khakurel
 - Devendra Shah
 - Saurav Keshari Aryal
 
