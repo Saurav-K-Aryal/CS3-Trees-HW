@@ -1,5 +1,7 @@
 #include <iostream>
 
+#include <string>
+
 #include <iomanip>
 
 using namespace std;
@@ -116,33 +118,55 @@ public:
  
 struct node
 {
-       int key;
-       node *parent;
-       char color;
-       node *left;
-       node *right;
+    int data;
+    node* left;
+    node* right;
+    node* parent;
+    string color;
 };
 
-class RBtree
+/*
+This class has essentially all the function to help us add, display and delete the node.
+*/
+class RBT
 {
-      node *root;
-      node *q;
-   public :
-      RBtree()
-      {
-              q=NULL;
-              root=NULL;
-      }
-      void insert(int z);
-      void insertfix(node *);
-      void leftrotate(node *);
-      void rightrotate(node *);
-      void del(int x);
-      node* successor(node *);
-      void delfix(node *);
-      void disp();
-      void display( node *);
-      void search();
+    node* root;
+    node* children;
+    public :
+        RBT();
+        /*
+        Add will add the element and after additiong
+        calls balance_add which will balance the tree.
+        */
+        void add(int number);
+        void balance_add(node* temp);
+        
+        /*
+        deletiing will delete the node and 
+        calls the delete_func which will balance
+        the tree
+        */
+        void deleting(int number);
+        void delete_func(node* temp);
+        
+        /*
+        Returns the node of the successor. Used for 
+        displaying and deletion.
+        */
+        node* successor(node* temp);
+        
+        /*
+        The helper_display function is called to display the tree
+        which inturns calls the function output.
+        */
+        void helper_display();
+        void output(node* temp);
+        
+        /*
+        The two funtions which will do the rotations.
+        */
+        void rotate_Left(node* temp);
+        void rotate_Right(node* temp);
 };
 
 
