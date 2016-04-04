@@ -1,0 +1,43 @@
+
+-------------------------------------------------------------------
+Initializing a random vector with 1 million values
+Values are unique and inclue 1 and 1 million
+
+---------------------------------------------------------------
+
+For a 2-3 B Tree
+
+Inserting unique values from 1 to 1,000,000 randomly
+Net time taken for insert:(in seconds) 0.594022
+
+
+Deleting values from 1 to 1,000,000 serially in ascending order
+net time taken for delete:(in seconds) 0.210755
+**********************************************************************
+For a BinarySearch Tree
+
+Inserting unique values from 1 to 1,000,000 randomly
+Net time taken for insert:(in seconds) 1.03495
+
+Deleting values from 1 to 1,000,000 serially in ascending order
+Net time taken for delete:(in seconds) 0.187757
+
+**********************************************************************
+For a Red Black Tree
+
+Inserting unique values from 1 to 1,000,000 randomly
+Net time taken for insert:(in seconds) 1.09105
+
+Deleting values from 1 to 1,000,000 serially in ascending order
+Net time taken for delete:(in seconds) 0.247717
+
+**********************************************************************
+For an AVL Tree
+
+Inserting unique values from 1 to 1,000,000 randomly
+Net time taken for insert:(in seconds) 2.24652
+
+Deleting values from 1 to 1,000,000 serially in ascending order
+Net time taken for delete:(in seconds) 0.312913
+
+**********************************************************************
