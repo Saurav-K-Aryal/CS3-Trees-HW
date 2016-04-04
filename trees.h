@@ -278,21 +278,20 @@ int RedBlackTree<T>::insert_key(const T& k)
 template <class T>
 int RedBlackTree<T>::delete_key(const T& k)
 {
-    RedBlackTreeNode<T>* pnode = search_tree_node(k);//pnode指向要删除的节点
+    RedBlackTreeNode<T>* pnode = search_tree_node(k);//
     if (NIL != pnode)
     {
         RedBlackTreeNode<T>* qnode, *tnode;//
-        if (get_left(pnode) == NIL || get_right(pnode) == NIL)//左节点，或右节点为空,或者全为空；
-            qnode = pnode;
-        else//左、右节点均不为空
-            qnode = get_successor(pnode);//qnode指向继承者
+        if (get_left(pnode) == NIL || get_right(pnode) == NIL)
+        else
+            qnode = get_successor(pnode);
 
-        if (get_left(qnode) != NIL)//左节点不为空时
+        if (get_left(qnode) != NIL)
             tnode = get_left(qnode);
-        else//右节点不为空时
+        else
             tnode = get_right(qnode);
 
-        //tnode的父节点为qnode
+      
         tnode->parent = get_parent(qnode);
 
         if (get_parent(qnode) == NIL)
@@ -395,14 +394,14 @@ template <class T>
 void RedBlackTree<T>::rb_insert_fixup(RedBlackTreeNode<T>*pnode)
 {
     RedBlackTreeNode<T> *qnode, *tnode;
-    //当pnode的父节点为红色时，破坏性质4
+
     while (get_color(get_parent(pnode)) == RED)
     {
-        qnode = get_parent(get_parent(pnode));//祖父结点
+        qnode = get_parent(get_parent(pnode));
         if (get_parent(pnode) == get_left(qnode))
         {
-            tnode = get_right(qnode);//pnode的叔叔结点
-            if (get_color(tnode) == RED) //case1 叔叔结点为红色
+            tnode = get_right(qnode);//pnode
+            if (get_color(tnode) == RED) //case1 
             {
                 set_color(get_parent(pnode), BLACK);
                 set_color(tnode, BLACK);
@@ -411,12 +410,12 @@ void RedBlackTree<T>::rb_insert_fixup(RedBlackTreeNode<T>*pnode)
             }
             else  //case 2 or case 3
             {
-                if (pnode == get_right(get_parent(pnode)))  //case2 pnode为右孩子
+                if (pnode == get_right(get_parent(pnode)))  //case2 
                 {
                     pnode = get_parent(pnode);
                     left_rotate(pnode);
                 }
-                //case3 pnode为左孩子
+                //case3 
                 set_color(get_parent(pnode), BLACK);
                 qnode = get_parent(get_parent(pnode));
                 set_color(qnode, RED);
@@ -456,7 +455,7 @@ void RedBlackTree<T>::rb_delete_fixup(RedBlackTreeNode<T> *pnode)
     while (pnode != root && get_color(pnode) == BLACK)
     {
         RedBlackTreeNode<T> *qnode, *tnode;
-        if (pnode == get_left(get_parent(pnode)))//X为左子树
+        if (pnode == get_left(get_parent(pnode)))
         {
             qnode = get_right(get_parent(pnode));
             if (get_color(qnode) == RED)  //case1
@@ -475,7 +474,7 @@ void RedBlackTree<T>::rb_delete_fixup(RedBlackTreeNode<T> *pnode)
             }
             else
             {
-                //case3，旋转结束后变成case4
+                //case3
                 if (get_color(get_right(qnode)) == BLACK)
                 {
                     set_color(get_left(qnode), BLACK);
@@ -491,7 +490,7 @@ void RedBlackTree<T>::rb_delete_fixup(RedBlackTreeNode<T> *pnode)
                 pnode = root;
             }
         }
-        else//X为右子树
+        else
         {
             qnode = get_left(get_parent(pnode));
             if (get_color(qnode) == RED)
