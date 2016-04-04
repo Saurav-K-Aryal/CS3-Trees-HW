@@ -278,20 +278,21 @@ int RedBlackTree<T>::insert_key(const T& k)
 template <class T>
 int RedBlackTree<T>::delete_key(const T& k)
 {
-    RedBlackTreeNode<T>* pnode = search_tree_node(k);//
+    RedBlackTreeNode<T>* pnode = search_tree_node(k);
     if (NIL != pnode)
     {
         RedBlackTreeNode<T>* qnode, *tnode;//
         if (get_left(pnode) == NIL || get_right(pnode) == NIL)
+            qnode = pnode;
         else
-            qnode = get_successor(pnode);
+            qnode = get_successor(pnode);//qnode
 
         if (get_left(qnode) != NIL)
             tnode = get_left(qnode);
         else
             tnode = get_right(qnode);
 
-      
+        //tnode qnode
         tnode->parent = get_parent(qnode);
 
         if (get_parent(qnode) == NIL)
