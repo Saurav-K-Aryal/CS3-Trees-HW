@@ -16,22 +16,6 @@ int main() {
     //initializing two clock variables to measure execution time.
     clock_t t1,t2;
     
-    // cout << "---------------------------------------------------------------\n";
-    // /* For Selection Sort */
-    // cout << "\nPerforming Selection Sort\n\n";
-
-    
-    // // start clock
-    // t1 = clock();
-    
-    // selectionSort(arr);
-    
-    // t2 = clock(); //end clock
-    
-    // float time_diff = ((float)t2-(float)t1);
-    
-    // cout << endl << "Net time to Sort::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
-    
     cout << "---------------------------------------------------------------\n" << endl;
     
     
@@ -102,28 +86,6 @@ int main() {
     
     cout << "---------------------------------------------------------------\n" << endl;
 
-
-    //re-initializing the array.
-    // for (int i = 1000000; i > 0; i--) {
-    //     arr[1000000 - i] = i;
-    // }
-    
-    // cout << "\nPerforming Insertion Sort\n\n";
-    
-    
-    // // start clock
-    // t1 = clock();
-
-    // insertionSort(arr, 1000000);
-    
-    // t2 = clock(); //end clock
-    
-    // time_diff = ((float)t2-(float)t1);
-    
-    // cout << endl << "Net time to Sort::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
-    
-    // cout << "---------------------------------------------------------------\n" << endl;
-
     
     //re-initializing the array.
     for (int i = 1000000; i > 0; i--) {
@@ -190,15 +152,48 @@ int main() {
     
     cout << endl << "Net time to Sort::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
     
-    cout << "***********************************************************\n" << endl;
+    cout << "---------------------------------------------------------------------\n" << endl;
 
-
-
-    for (int i = 0; i < 1000000; i++)
-    {
-        cout << arr[i] << endl;
+    //re-initializing the array.
+    for (int i = 1000000; i > 0; i--) {
+        arr[1000000 - i] = i;
     }
-   cout << arr[0] << endl;
+    
+    cout << "\nPerforming Insertion Sort\n\n";
+    
+    
+    // start clock
+    t1 = clock();
+
+    insertionSort(arr, 1000000);
+    
+    t2 = clock(); //end clock
+    
+    time_diff = ((float)t2-(float)t1);
+    
+    cout << endl << "Net time to Sort::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
+    
+    cout << "---------------------------------------------------------------\n" << endl;
+
+    /* For Selection Sort */
+    cout << "\nPerforming Selection Sort\n\n";
+
+    
+    // start clock
+    t1 = clock();
+    
+    selectionSort(arr);
+    
+    t2 = clock(); //end clock
+    
+    time_diff = ((float)t2-(float)t1);
+    
+    cout << endl << "Net time to Sort::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
+
+
+    cout << "**************************************************************\n" << endl;
+
+
     return 0;
 	
 }
