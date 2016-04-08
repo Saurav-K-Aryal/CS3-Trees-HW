@@ -296,3 +296,49 @@ void insertionSort(int array[], int size)
         array[j] = x;
     }
 }
+
+
+/* Bucket Sort */
+
+void bucketSort (int arr[], int n)
+{
+  //Here range is [1,100]
+  int m = 1000001;
+ 
+  //Create m empty buckets
+  int buckets[m];
+ 
+  //Intialize all buckets to 0
+  for (int i = 0; i < m; ++i)
+    buckets[i] = 0;
+ 
+  //Increment the number of times each element is present in the input
+  //array. Insert them in the buckets
+  for (int i = 0; i < n; ++i)
+    ++buckets[arr[i]];
+ 
+  //Sort using insertion sort and concatenate 
+  for (int i = 0, j = 0; j < m; ++j)
+    for (int k = buckets[j]; k > 0; --k)
+      arr[i++] = j;
+}
+
+
+
+/* Bubble Sort */
+
+void bubbleSort(int a[], int dim) 
+{
+    for(int ma = dim - 1; ma > 0; ma--)
+    { 
+         for(int i = 0; i < dim - 1 ;i++)
+         {
+             if(a[i] > a[i + 1])
+            {
+                 int tmp = a[i];
+                 a[i] = a[i + 1];
+                 a[i + 1] = tmp;
+            }
+         }
+    }
+}

@@ -1,6 +1,6 @@
 #include <iostream>
-#include <time.h>
 #include <string.h>
+#include <vector>
 /* Selection Sort Protype */
 void selectionSort(int array[]);
 
@@ -49,3 +49,9 @@ void radixSort(int* a, int N);
 
 /* Insertion Sort */
 void insertionSort(int a[], int size);
+
+/* Bucket Sort */
+void bucketSort(int arr[], int n);
+
+/* Bubble Sort */
+void bubbleSort(int a[], int dim); 

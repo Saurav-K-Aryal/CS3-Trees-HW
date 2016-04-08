@@ -104,17 +104,39 @@ int main() {
 
 
     //re-initializing the array.
+    // for (int i = 1000000; i > 0; i--) {
+    //     arr[1000000 - i] = i;
+    // }
+    
+    // cout << "\nPerforming Insertion Sort\n\n";
+    
+    
+    // // start clock
+    // t1 = clock();
+
+    // insertionSort(arr, 1000000);
+    
+    // t2 = clock(); //end clock
+    
+    // time_diff = ((float)t2-(float)t1);
+    
+    // cout << endl << "Net time to Sort::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
+    
+    // cout << "---------------------------------------------------------------\n" << endl;
+
+    
+    //re-initializing the array.
     for (int i = 1000000; i > 0; i--) {
         arr[1000000 - i] = i;
     }
     
-    cout << "\nPerforming Insertion Sort\n\n";
+    cout << "\nPerforming Bucket Sort\n\n";
     
     
     // start clock
     t1 = clock();
 
-    insertionSort(arr, 1000000);
+    bucketSort(arr, 1000000);
     
     t2 = clock(); //end clock
     
@@ -123,7 +145,60 @@ int main() {
     cout << endl << "Net time to Sort::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
     
     cout << "---------------------------------------------------------------\n" << endl;
-   
+
+
+
+    //re-initializing the array.
+    for (int i = 1000000; i > 0; i--) {
+        arr[1000000 - i] = i;
+    }
+    
+    cout << "\nPerforming Raidx Sort\n\n";
+    
+    
+    // start clock
+    t1 = clock();
+
+    radixSort(arr, 1000000);
+    
+    t2 = clock(); //end clock
+    
+    time_diff = ((float)t2-(float)t1);
+    
+    cout << endl << "Net time to Sort::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
+    
+    cout << "---------------------------------------------------------------\n" << endl;
+
+
+
+        //re-initializing the array.
+    for (int i = 1000000; i > 0; i--) {
+        arr[1000000 - i] = i;
+    }
+    
+    cout << "\nPerforming Bubble Sort\n\n";
+    
+    
+    // start clock
+    t1 = clock();
+
+    bubbleSort(arr, 1000000);
+    
+    t2 = clock(); //end clock
+    
+    time_diff = ((float)t2-(float)t1);
+    
+    cout << endl << "Net time to Sort::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
+    
+    cout << "***********************************************************\n" << endl;
+
+
+
+    for (int i = 0; i < 1000000; i++)
+    {
+        cout << arr[i] << endl;
+    }
+   cout << arr[0] << endl;
     return 0;
 	
 }
