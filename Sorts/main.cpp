@@ -103,18 +103,18 @@ int main() {
     cout << "---------------------------------------------------------------\n" << endl;
 
 
-       //re-initializing the array.
+    //re-initializing the array.
     for (int i = 1000000; i > 0; i--) {
         arr[1000000 - i] = i;
     }
     
-    cout << "\nPerforming Radix Sort\n\n";
+    cout << "\nPerforming Insertion Sort\n\n";
     
     
     // start clock
     t1 = clock();
 
-    radixSort(arr, 999999);
+    insertionSort(arr, 1000000);
     
     t2 = clock(); //end clock
     

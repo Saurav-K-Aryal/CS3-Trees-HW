@@ -45,3 +45,7 @@ class Heap{
 
 /* Radix Sort */
 void radixSort(int* a, int N);
+
+
+/* Insertion Sort */
+void insertionSort(int a[], int size);

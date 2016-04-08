@@ -277,3 +277,22 @@ void radixSort(int* a, int N){
     delete[] buckets;
     delete[] startIndex;
 }
+
+
+/* Insertion Sort */
+
+
+void insertionSort(int array[], int size)
+{
+    for (int i = 1; i < size; i++)
+    {
+        int x = array[i];
+        int j = i;
+        while (j > 0 && array[j-1] > x)
+        {
+            array[j] = array[j-1];
+            j--;
+        }
+        array[j] = x;
+    }
+}
