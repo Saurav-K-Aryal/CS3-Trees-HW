@@ -1,5 +1,6 @@
 #include <iostream>
-
+#include <time.h>
+#include <string.h>
 /* Selection Sort Protype */
 void selectionSort(int array[]);
 
@@ -40,3 +41,7 @@ class Heap{
         int extract_min();
         void heapsort(int [], int);
 };
+
+
+/* Radix Sort */
+void radixSort(int* a, int N);
