@@ -1,8 +1,10 @@
 #include <iostream>
 
+/* Selection Sort Protype */
 void selectionSort(int array[]);
 
 
+/* Quick Sort Definition */
 class QuickSorter
 {
 public:
@@ -15,3 +17,8 @@ private:
     unsigned int size;
     int* data;
 };
+
+
+/* Merge Sort ProtoTypes */
+void merge(int a[], const int low, const int mid, const int high);
+void merge_sort( int a[], const int low, const int high);
