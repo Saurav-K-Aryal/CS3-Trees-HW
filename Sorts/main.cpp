@@ -80,7 +80,28 @@ int main() {
     
     cout << "---------------------------------------------------------------\n" << endl;
 
+
+       //re-initializing the array.
+    for (int i = 1000000; i > 0; i--) {
+        arr[1000000 - i] = i;
+    }
     
+    cout << "\nPerforming Heap Sort\n\n";
+    
+    
+    // start clock
+    t1 = clock();
+    Heap *heap = new Heap();
+    heap->heapsort(arr, 999999);
+    
+    t2 = clock(); //end clock
+    
+    time_diff = ((float)t2-(float)t1);
+    
+    cout << endl << "Net time to Sort::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
+    
+    cout << "---------------------------------------------------------------\n" << endl;
+   
     return 0;
 	
 }

@@ -11,6 +11,9 @@ Overview:
 
 Implementing the following flavors of trees in C++ and realworld run-time analysis to insert and then delete all values from 1 to 1,000,000.
 
+Implementing the following sorting Algorithms in C++ and realworld run-time analysis to sort values from 1,000,000 to 1 inserted in descending
+order and sort them to ascending order.
+
 
 Results over three experimental runs and average(in seconds):
 
@@ -27,3 +30,12 @@ Results over three experimental runs and average(in seconds):
 * 2-3 B Tree -> (0.210755 + 0.193194 + 0.192079) / 3 = 0.198676 s
 * Red Black Tree -> (0.247717 + 0.228094 + 0.226969) / 3 = 0.234260 s
 * Binary Search Tree -> (0.187757 + 0.172333 + 0.175951) / 3 = 0.178680 s
+
+**Sorting run-time for sorts**
+
+* Selection Sort -> 
+* Quick Sort ->
+* Merge Sort ->
+* Radix Sort ->
+* Heap Sort ->
+* Bucket Sort ->

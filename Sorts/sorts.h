@@ -22,3 +22,21 @@ private:
 /* Merge Sort ProtoTypes */
 void merge(int a[], const int low, const int mid, const int high);
 void merge_sort( int a[], const int low, const int high);
+
+
+/* Heap Sort Definitions */
+class Heap{
+    int items[1000000];
+    int n;
+    int get_parent(int);
+    int get_left_child(int);
+    int get_right_child(int);
+    void bubble_up(int);
+    void bubble_down(int);
+    void make_heap(int [], int);
+    public:
+        Heap();
+        void insert(int);
+        int extract_min();
+        void heapsort(int [], int);
+};
