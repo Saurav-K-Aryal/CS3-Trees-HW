@@ -38,7 +38,7 @@ int main() {
     
     float time_diff = ((float)t2-(float)t1);
     
-    cout << endl << "Net time to Sort::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
+    cout << endl << "Net time to Sort(in seconds)::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
     
     cout << "---------------------------------------------------------------\n" << endl;
 
@@ -60,7 +60,7 @@ int main() {
     
     time_diff = ((float)t2-(float)t1);
     
-    cout << endl << "Net time to Sort::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
+    cout << endl << "Net time to Sort(in seconds)::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
     
     cout << "---------------------------------------------------------------\n" << endl;
 
@@ -82,7 +82,7 @@ int main() {
     
     time_diff = ((float)t2-(float)t1);
     
-    cout << endl << "Net time to Sort::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
+    cout << endl << "Net time to Sort(in seconds)::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
     
     cout << "---------------------------------------------------------------\n" << endl;
 
@@ -104,7 +104,7 @@ int main() {
     
     time_diff = ((float)t2-(float)t1);
     
-    cout << endl << "Net time to Sort::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
+    cout << endl << "Net time to Sort(in seconds)::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
     
     cout << "---------------------------------------------------------------\n" << endl;
 
@@ -127,7 +127,7 @@ int main() {
     
     time_diff = ((float)t2-(float)t1);
     
-    cout << endl << "Net time to Sort::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
+    cout << endl << "Net time to Sort(in seconds)::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
     
     cout << "---------------------------------------------------------------\n" << endl;
 
@@ -150,7 +150,7 @@ int main() {
     
     time_diff = ((float)t2-(float)t1);
     
-    cout << endl << "Net time to Sort::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
+    cout << endl << "Net time to Sort(in seconds)::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
     
     cout << "---------------------------------------------------------------------\n" << endl;
 
@@ -171,7 +171,7 @@ int main() {
     
     time_diff = ((float)t2-(float)t1);
     
-    cout << endl << "Net time to Sort::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
+    cout << endl << "Net time to Sort(in seconds)::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
     
     cout << "---------------------------------------------------------------\n" << endl;
 
@@ -188,7 +188,7 @@ int main() {
     
     time_diff = ((float)t2-(float)t1);
     
-    cout << endl << "Net time to Sort::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
+    cout << endl << "Net time to Sort(in seconds)::: " << time_diff / CLOCKS_PER_SEC << endl << endl;
 
 
     cout << "**************************************************************\n" << endl;

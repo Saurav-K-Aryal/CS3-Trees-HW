@@ -4,7 +4,7 @@
 Performing Quick Sort
 
 
-Net time to Sort::: 0.133502
+Net time to Sort(in seconds)::: 0.133502
 
 ---------------------------------------------------------------
 
@@ -12,7 +12,7 @@ Net time to Sort::: 0.133502
 Performing Merge Sort
 
 
-Net time to Sort::: 0.60727
+Net time to Sort(in seconds)::: 0.60727
 
 ---------------------------------------------------------------
 
@@ -20,7 +20,7 @@ Net time to Sort::: 0.60727
 Performing Heap Sort
 
 
-Net time to Sort::: 1.05336
+Net time to Sort(in seconds)::: 1.05336
 
 ---------------------------------------------------------------
 
@@ -28,7 +28,7 @@ Net time to Sort::: 1.05336
 Performing Bucket Sort
 
 
-Net time to Sort::: 0.044476
+Net time to Sort(in seconds)::: 0.044476
 
 ---------------------------------------------------------------
 
@@ -36,7 +36,7 @@ Net time to Sort::: 0.044476
 Performing Raidx Sort
 
 
-Net time to Sort::: 0.15096
+Net time to Sort(in seconds)::: 0.15096
 
 ---------------------------------------------------------------
 
@@ -44,7 +44,7 @@ Net time to Sort::: 0.15096
 Performing Bubble Sort
 
 
-Net time to Sort::: 9062.45
+Net time to Sort(in seconds)::: 9062.45
 
 ---------------------------------------------------------------------
 
@@ -52,7 +52,7 @@ Net time to Sort::: 9062.45
 Performing Insertion Sort
 
 
-Net time to Sort::: 4157.74
+Net time to Sort(in seconds)::: 4157.74
 
 ---------------------------------------------------------------
 
@@ -60,6 +60,6 @@ Net time to Sort::: 4157.74
 Performing Selection Sort
 
 
-Net time to Sort::: 2456.39
+Net time to Sort(in seconds)::: 2456.39
 
 **************************************************************
